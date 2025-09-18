@@ -11,7 +11,6 @@ private:
     int date[3];
 
 public:
-
 // без параметров
     SocialMediaProfile() { 
         username  = "";
@@ -88,12 +87,12 @@ public:
         return obj.scan(stream);
     };
 
-// 
+// чтение из файла
     static SocialMediaProfile* readFromFile(istream &stream) {
         int count = 0;
-        string temp;
+        SocialMediaProfile temp;
         while (stream >> temp) {
-            for (int i = 0; i < 6; i++) stream >> temp;
+            //for (int i = 0; i < 7; i++) stream >> temp;
             count++;
         }
         stream.clear();
@@ -101,29 +100,16 @@ public:
         SocialMediaProfile* profiles = new SocialMediaProfile[count];
 
         for (int i = 0; i < count; i++) {
-            stream >> profiles[i].username 
-                   >> profiles[i].name 
-                   >> profiles[i].surname 
-                   >> profiles[i].followers 
-                   >> profiles[i].follows 
-                   >> profiles[i].date[0]
-                   >> profiles[i].date[1]
-                   >> profiles[i].date[2];
+            stream >> profiles[i];
         }
         
         return profiles;
     }
 
+// запись в файл
     static void writeToFile(ostream &stream, SocialMediaProfile* profiles, int count) {
         for (int i = 0; i < count; i++) {
-            stream << profiles[i].username << " "
-                   << profiles[i].name << " "
-                   << profiles[i].surname << " "
-                   << profiles[i].followers << " "
-                   << profiles[i].follows << " "
-                   << profiles[i].date[0] << " "
-                   << profiles[i].date[1] << " "
-                   << profiles[i].date[2] << endl;
+            stream << profiles[i];
         }
     }
 };

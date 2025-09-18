@@ -29,7 +29,7 @@ int main(){
     cout << "дата поставленная через сеттер и полученная через геттер: "
          << gottenDate[0] << "." << gottenDate[1] << "." << gottenDate[2] << endl;
 
-    // выборка кол-во подписчиков > n
+    // выборка кол-во подписчиков >= n
     int n;
     cout << "Минимум подписчиков для выборки профилей: ";
     cin >> n;
@@ -45,7 +45,6 @@ int main(){
     cout << "\nПерегрузка операции ввода\n" ;
     cin >> p1;
 
-    int count;
     // чтение файла
     ifstream file("input.txt");
     SocialMediaProfile* input_profiles = SocialMediaProfile::readFromFile(file);

@@ -1,1 +1,6 @@
-username name surname 12 11 31 12 2005
+Юзер: username
+Имя: name
+Фамилия: surname
+Подписчики: 12
+Подписки: 11
+Дата рег.: 31.0.0
