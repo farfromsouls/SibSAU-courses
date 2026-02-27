@@ -5,6 +5,8 @@
 #include <sstream>
 #include <algorithm>
 #include <cctype>
+#include <locale.h>
+#include <windows.h>
 using namespace std;
 
 class PalindromeFinder
@@ -106,6 +108,10 @@ string readTextFromFile(const string &filename)
 
 int main()
 {
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+    setlocale(LC_ALL, "ru_RU.UTF-8");
+
     const string inputFilename = "input.txt";
     string inputText = readTextFromFile(inputFilename);
     {
