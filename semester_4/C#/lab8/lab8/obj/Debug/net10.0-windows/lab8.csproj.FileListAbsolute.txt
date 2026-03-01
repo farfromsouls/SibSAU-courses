@@ -1,0 +1,16 @@
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\bin\Debug\net10.0-windows\lab8.exe
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\bin\Debug\net10.0-windows\lab8.deps.json
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\bin\Debug\net10.0-windows\lab8.runtimeconfig.json
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\bin\Debug\net10.0-windows\lab8.dll
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\bin\Debug\net10.0-windows\lab8.pdb
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.csproj.GenerateResource.cache
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.AssemblyInfoInputs.cache
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.AssemblyInfo.cs
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.csproj.CoreCompileInputs.cache
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.dll
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\refint\lab8.dll
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.pdb
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.genruntimeconfig.cache
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\ref\lab8.dll
+C:\Users\farfromsouls\Desktop\ООП\yan\lab8\lab8\obj\Debug\net10.0-windows\lab8.Periodic.resources
