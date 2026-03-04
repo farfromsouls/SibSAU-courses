@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,27 +13,20 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
+            dataGridView1 = new DataGridView();
+            NameColumn = new DataGridViewTextBoxColumn();
+            TypeColumn = new DataGridViewTextBoxColumn();
+            PagesColumn = new DataGridViewTextBoxColumn();
+            PeriodColumn = new DataGridViewTextBoxColumn();
+            AmountColumn = new DataGridViewTextBoxColumn();
+            YearColumn = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(12, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(285, 424);
-            listBox1.TabIndex = 0;
             // 
             // button1
             // 
@@ -69,26 +55,86 @@
             textBox1.Size = new Size(203, 27);
             textBox1.TabIndex = 3;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NameColumn, TypeColumn, PagesColumn, PeriodColumn, AmountColumn, YearColumn });
+            dataGridView1.Location = new Point(2, 82);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(816, 309);
+            dataGridView1.TabIndex = 4;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // NameColumn
+            // 
+            NameColumn.HeaderText = "Name";
+            NameColumn.MinimumWidth = 6;
+            NameColumn.Name = "NameColumn";
+            NameColumn.Width = 125;
+            // 
+            // TypeColumn
+            // 
+            TypeColumn.HeaderText = "Type";
+            TypeColumn.MinimumWidth = 6;
+            TypeColumn.Name = "TypeColumn";
+            TypeColumn.Width = 125;
+            // 
+            // PagesColumn
+            // 
+            PagesColumn.HeaderText = "Pages";
+            PagesColumn.MinimumWidth = 6;
+            PagesColumn.Name = "PagesColumn";
+            PagesColumn.Width = 125;
+            // 
+            // PeriodColumn
+            // 
+            PeriodColumn.HeaderText = "Period";
+            PeriodColumn.MinimumWidth = 6;
+            PeriodColumn.Name = "PeriodColumn";
+            PeriodColumn.Width = 125;
+            // 
+            // AmountColumn
+            // 
+            AmountColumn.HeaderText = "Amount";
+            AmountColumn.MinimumWidth = 6;
+            AmountColumn.Name = "AmountColumn";
+            AmountColumn.Width = 125;
+            // 
+            // YearColumn
+            // 
+            YearColumn.HeaderText = "Year";
+            YearColumn.MinimumWidth = 6;
+            YearColumn.Name = "YearColumn";
+            YearColumn.Width = 125;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(610, 450);
+            ClientSize = new Size(839, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(listBox1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
-
-        private ListBox listBox1;
         private Button button1;
         private Button button2;
         private TextBox textBox1;
+        private DataGridView dataGridView1;
+
+        // ПЕРЕИМЕНОВАННЫЕ ПОЛЯ
+        private DataGridViewTextBoxColumn NameColumn;
+        private DataGridViewTextBoxColumn TypeColumn;
+        private DataGridViewTextBoxColumn PagesColumn;
+        private DataGridViewTextBoxColumn PeriodColumn;
+        private DataGridViewTextBoxColumn AmountColumn;
+        private DataGridViewTextBoxColumn YearColumn;
     }
 }
