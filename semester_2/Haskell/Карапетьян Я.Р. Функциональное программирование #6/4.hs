@@ -11,4 +11,4 @@ main = do
             let linesList = lines content
                 firstNLines = take n linesList
             putStrLn $ unlines firstNLines
-        _ -> putStrLn "Использование: head <n> <имя_файла>"
+        _ -> putStrLn "Использование: head n имя_файла"

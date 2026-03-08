@@ -9,4 +9,4 @@ main = do
         [fileName] -> do
             content <- readFile fileName
             putStr content
-        _ -> putStrLn "Использование: cat <имя_файла>"
+        _ -> putStrLn "Использование: cat имя_файла"
