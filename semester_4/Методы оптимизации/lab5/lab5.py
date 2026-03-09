@@ -34,7 +34,6 @@ def h_probability_function(delta_e: float, temperature: float) -> float:
     return math.exp(-delta_e / temperature)
 
 def linear_decrease_temperature(current_temperature: float) -> float:
-    """Простое линейное уменьшение температуры."""
     return current_temperature - 1
 
 def generate_new_x(x: float) -> float:
