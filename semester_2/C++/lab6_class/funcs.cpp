@@ -3,6 +3,32 @@
 #include "Ball.h"
 using namespace std;
 
+int Ball::objectCount = 0;
+
+Ball::Ball() {
+    this->name = "name";
+    this->x, this->y, this->z, this->r = 0;
+    objectCount++;
+}
+
+Ball::Ball(string _name, int _x, int _y, int _z, int _r) {
+    this->name = _name;
+    this->x = _x;
+    this->y = _y;
+    this->z = _z;
+    this->r = _r;
+    objectCount++;
+}
+
+Ball::Ball(const Ball& other) {
+    this->name = other.name;
+    this->x = other.x;
+    this->y = other.y;
+    this->z = other.z;
+    this->r = other.r;
+    objectCount++;
+}
+
 void Ball::input() {
     cout << "Ball name: ";
     cin >> this->name;
@@ -24,6 +50,60 @@ void Ball::output() {
     cout << "\nBall radius: " << this->r << "\n";
 }
 
-double Ball::volume() {
+double Ball::volume() const {
     return (4.0/3.0) * M_PI * pow(this->r, 3);
+}
+
+Ball& Ball::operator=(const Ball& other) {
+    if (this != &other) {  
+        this->name = other.name;
+        this->x = other.x;
+        this->y = other.y;
+        this->z = other.z;
+        this->r = other.r;
+    }
+    return *this;
+}
+
+Ball& Ball::operator*=(double scalar) {
+    this->r = static_cast<int>(this->r * scalar);
+    this->x = static_cast<int>(this->x * scalar);
+    this->y = static_cast<int>(this->y * scalar);
+    this->z = static_cast<int>(this->z * scalar);
+    return *this;
+}
+
+bool Ball::operator<(double number) const {
+    double vol = (4.0/3.0) * M_PI * pow(this->r, 3);
+    return vol < number;
+}
+
+ostream& operator<<(ostream& os, const Ball& ball) {
+    os << "\nname: " << ball.name;
+    os << "\nxyz: (" << ball.x << ", " << ball.y << ", " << ball.z << ")";
+    os << "\nr: " << ball.r;
+    os << "\nv: " << ball.volume();
+    return os;
+}
+
+istream& operator>>(istream& is, Ball& ball) {
+    cout << "name: ";
+    is >> ball.name;
+    cout << "x: ";
+    is >> ball.x;
+    cout << "y: ";
+    is >> ball.y;
+    cout << "z: ";
+    is >> ball.z;
+    cout << "r: ";
+    is >> ball.r;
+    return is;
+}
+
+int Ball::getObjectCount() {
+    return objectCount;
+}
+
+Ball::~Ball() {
+    objectCount--;
 }
