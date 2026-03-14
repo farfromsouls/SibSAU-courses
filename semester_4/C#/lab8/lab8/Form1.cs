@@ -14,7 +14,7 @@ namespace lab8
         public Form1()
         {
             InitializeComponent();
-            XmlReader rdr = XmlReader.Create("C:\\Users\\farfromsouls\\Desktop\\ООП\\yan\\lab8\\lab8\\main.xml");
+            XmlReader rdr = XmlReader.Create("C:\\Users\\farfromsouls\\Documents\\GitHub\\SibSAU-courses\\semester_4\\C#\\lab8\\lab8\\main.xml");
             string name = "0";
             string type = "0";
             int pages = 0;

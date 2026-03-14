@@ -66,16 +66,15 @@ Ball& Ball::operator=(const Ball& other) {
 }
 
 Ball& Ball::operator*=(double scalar) {
-    this->r = static_cast<int>(this->r * scalar);
-    this->x = static_cast<int>(this->x * scalar);
-    this->y = static_cast<int>(this->y * scalar);
-    this->z = static_cast<int>(this->z * scalar);
+    this->r = this->r * scalar;
+    this->x = this->x * scalar;
+    this->y = this->y * scalar;
+    this->z = this->z * scalar;
     return *this;
 }
 
 bool Ball::operator<(double number) const {
-    double vol = (4.0/3.0) * M_PI * pow(this->r, 3);
-    return vol < number;
+    return volume() < number;
 }
 
 ostream& operator<<(ostream& os, const Ball& ball) {
