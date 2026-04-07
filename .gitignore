@@ -2,3 +2,5 @@
 venv
 bin
 obj
+*.png
+.txt
